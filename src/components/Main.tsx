@@ -5,11 +5,14 @@ export default function Main() {
   arr.push("4");
   arr.push("2");
   arr.push("1");
+  num = 3;
   return (
     <div>
-      {arr.map((x) => (
-        <p>{x}</p>
-      ))}
+      {arr.map((x) => {
+        if (Number(x) > num) {
+          return <p>{x}</p>;
+        }
+      })}
     </div>
   );
 }
