@@ -21,5 +21,32 @@ export default function Main() {
 
   const output: string[] = vaildatable();
 
-  return <div>{output}</div>;
+  interface Person {
+    name: string;
+    age: number;
+    hobby: string[];
+    callGreeting(): string;
+  }
+
+  class Person {
+    constructor(name: string, age: number, hobby: string[]) {
+      this.name = name;
+      this.age = age;
+      this.hobby = hobby;
+    }
+    callGreeting() {
+      return `My name is ${this.name} and I am ${
+        this.age
+      }. My hobbies are ${this.hobby.join(", ")}.`;
+    }
+  }
+
+  const me = new Person("sun", 15, ["playing soccer", "sleeping", "running"]);
+
+  return (
+    <div>
+      <p>{output}</p>
+      <p>{me.callGreeting()}</p>
+    </div>
+  );
 }
