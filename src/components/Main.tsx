@@ -6,13 +6,20 @@ export default function Main() {
   arr.push("2");
   arr.push("1");
   num = 3;
-  return (
-    <div>
-      {arr.map((x) => {
-        if (Number(x) > num) {
-          return <p>{x}</p>;
-        }
-      })}
-    </div>
-  );
+
+  function vaildatable(): string[] {
+    const temp = [];
+
+    for (let c of arr) {
+      if (num > Number(c)) {
+        temp.push(c);
+      }
+    }
+
+    return temp;
+  }
+
+  const output: string[] = vaildatable();
+
+  return <div>{output}</div>;
 }
