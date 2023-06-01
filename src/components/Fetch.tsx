@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ChildProp from "./ChildProp";
 
 type PostProps = {
   url: string;
@@ -21,17 +22,7 @@ export default function Fetch() {
   return (
     <div>
       <button onClick={requestFetch}>Click</button>
-      <div>
-        {data && (
-          <img
-            src={data}
-            alt="img"
-            width={200}
-            height={200}
-            style={{ objectFit: "cover" }}
-          />
-        )}
-      </div>
+      <div>{data && <ChildProp url={data} />}</div>
     </div>
   );
 }
