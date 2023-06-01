@@ -6,6 +6,7 @@ import Utility from "./components/Utility";
 import Generics from "./components/Generics";
 import ReactState from "./components/ReactState";
 import Fetch from "./components/Fetch";
+import GitTrain from "./components/GitTrain";
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
       <Generics />
       <ReactState />
       <Fetch />
+      <GitTrain />
     </div>
   );
 }
