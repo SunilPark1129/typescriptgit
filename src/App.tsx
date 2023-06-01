@@ -5,6 +5,7 @@ import Functions from "./components/Functions";
 import Utility from "./components/Utility";
 import Generics from "./components/Generics";
 import ReactState from "./components/ReactState";
+import Fetch from "./components/Fetch";
 function App() {
   return (
     <div>
@@ -13,6 +14,7 @@ function App() {
       <Utility />
       <Generics />
       <ReactState />
+      <Fetch />
     </div>
   );
 }
