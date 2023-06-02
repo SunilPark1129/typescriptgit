@@ -20,6 +20,7 @@ export default function GitTrain() {
       {Object.entries(unit).map(([key, value]) => (
         <p key={key}>{`${key}: ${value}`}</p>
       ))}
+      <p>I removed 8 commits</p>
     </div>
   );
 }
