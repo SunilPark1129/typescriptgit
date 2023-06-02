@@ -8,9 +8,9 @@ export default function GitTrain() {
 
   const unit: Units = {
     id: 0,
-    name: "pencil",
-    price: 300,
-    type: "tool",
+    name: "car",
+    price: 31000,
+    type: "car",
   };
 
   console.log(unit);
