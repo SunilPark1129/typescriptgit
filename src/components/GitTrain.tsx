@@ -12,8 +12,8 @@ export default function GitTrain() {
     price: 31000,
     type: "car",
   };
-  
-   const unit2: Units = {
+
+  const unit2: Units = {
     id: 1,
     name: "pen",
     price: 400,
