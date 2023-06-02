@@ -8,9 +8,9 @@ export default function GitTrain() {
 
   const unit: Units = {
     id: 0,
-    name: "pencil",
-    price: 300,
-    type: "tool",
+    name: "car",
+    price: 31000,
+    type: "car",
   };
 
   console.log(unit);
@@ -20,6 +20,7 @@ export default function GitTrain() {
       {Object.entries(unit).map(([key, value]) => (
         <p key={key}>{`${key}: ${value}`}</p>
       ))}
+      <p>I removed 8 commits</p>
     </div>
   );
 }
