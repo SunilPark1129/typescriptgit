@@ -12,16 +12,6 @@ export default function GitTrain() {
     price: 31000,
     type: "car",
   };
-<<<<<<< HEAD
-
-  const unit2: Units = {
-    id: 1,
-    name: "pen",
-    price: 400,
-    type: "tool",
-  };
-=======
->>>>>>> parent of 3eb90cc (Update GitTrain.tsx)
 
   console.log(unit);
 
